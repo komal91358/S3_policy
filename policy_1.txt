@@ -1,0 +1,26 @@
+############Allow All Permission #################
+
+{
+  "Id": "Policy1641239367708",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1641239365265",
+      "Action": [
+        "s3:DeleteAccessPoint",
+        "s3:DeleteBucket",
+        "s3:DeleteBucketPolicy",
+        "s3:DeleteObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::hello098765",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::666229982288:user/komal"
+        ]
+      }
+    }
+  ]
+}
+
+
